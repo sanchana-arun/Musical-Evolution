@@ -14,11 +14,11 @@
     }
 
     header {
-  background-color: #b99b7f; /* Brownish-beige header background */
+  background-color: #b99b7f; 
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding: 20px;
   text-align: center;
-  border: 15px solid #a0876e; /* Darker brownish-beige border */
+  border: 15px solid #a0876e; 
   border-radius: 8px;
   background-image: linear-gradient(to bottom right, #b99b7f, #a58c6a);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -146,7 +146,7 @@
       color: #888888;
     }
 
-    /* Define the style for the genre boxes */
+
 .genre-box {
   background-color: #f0f0f0;
   border: 1px solid #ccc;
@@ -154,7 +154,7 @@
   margin-bottom: 20px;
 }
 
-/* Style the genre titles */
+
 .genre-title {
   font-size: 24px;
   margin-top: 0;
@@ -256,57 +256,6 @@
     </div>
   </div>
   
-
- 
-  <script>
-let audio = new Audio();
-let isPlaying = false;
-let playButton = document.getElementById('playButton');
-let playIcon = document.querySelector('.play-icon');
-let pauseIcon = document.querySelector('.pause-icon');
-let progressBar = document.querySelector('.progress-bar');
-let progressBarContainer = document.querySelector('.progress-bar-container');
-let timeElapsed = document.querySelector('.time-elapsed');
-
-function togglePlay() {
-  if (isPlaying) {
-    audio.pause();
-    playIcon.style.display = 'block';
-    pauseIcon.style.display = 'none';
-  } else {
-    audio.play();
-    playIcon.style.display = 'none';
-    pauseIcon.style.display = 'block';
-  }
-  isPlaying = !isPlaying;
-}
-
-function updateProgressBar() {
-  const { currentTime, duration } = audio;
-  const progressPercent = (currentTime / duration) * 100;
-  progressBar.style.width = `${progressPercent}%`;
-
-  // Update the time elapsed
-  const elapsedTime = formatTime(currentTime);
-  timeElapsed.textContent = elapsedTime;
-}
-
-function setProgressBar(e) {
-  const width = progressBarContainer.clientWidth;
-  const clickX = e.offsetX;
-  const duration = audio.duration;
-  audio.currentTime = (clickX / width) * duration;
-}
-
-function formatTime(time) {
-  const minutes = Math.floor(time / 60);
-  let seconds = Math.floor(time % 60);
-  seconds = seconds < 10 ? `0${seconds}` : seconds;
-  return `${minutes}:${seconds}`;
-}
-
-audio.addEventListener('timeupdate', updateProgressBar);
-</script>
 </body>
 
 </html>
