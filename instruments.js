@@ -1,6 +1,5 @@
-// Wait for the DOM to fully load
 document.addEventListener("DOMContentLoaded", function () {
-    // Add animation to instrument items on scroll
+   
     function animateInstrumentItems() {
       const instrumentItems = document.querySelectorAll('.instrument-item');
   
