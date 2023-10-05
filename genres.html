@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Different genres of music</title>
+  <style>
+    body {
+      background-color:  #f0e6d2;
+      font-family: 'Crimson Pro', serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+  background-color: #b99b7f; /* Brownish-beige header background */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 20px;
+  text-align: center;
+  border: 15px solid #a0876e; /* Darker brownish-beige border */
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom right, #b99b7f, #a58c6a);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+    h1 {
+      color: #fff;
+      font-size: 36px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 1px 1px 1px rgba(91, 35, 124, 0.8);
+      text-transform: uppercase;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .genre-container {
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      max-width: 800px;
+      width: 100%;
+      line-height: 1.5;
+      font-size: 20px;
+      color: #333333;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .user-message {
+      font-size: 20px;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .genre-content {
+      text-align: center;
+    }
+
+    .genre-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .genre{
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      width: 100%;
+      line-height: 1.5;
+      font-size: 20px;
+      color: #333333;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .signature {
+      text-align: right;
+      margin-top: 20px;
+      font-style: italic;
+    }
+
+    .song-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .play-button {
+      background-color: #d5a7f3;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-right: 10px;
+    }
+
+    .play-button:hover {
+      background-color: #8b5da9;
+    }
+
+    .play-icon,
+    .pause-icon {
+      width: 30px;
+      height: 30px;
+      fill: #fff;
+    }
+
+    .progress-bar-container {
+      width: 200px;
+      height: 10px;
+      background-color: #f8f8f8;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .progress-bar {
+      width: 0%;
+      height: 100%;
+      background-color: #d5a7f3;
+      border-radius: 5px;
+    }
+
+    .time-elapsed {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #888888;
+    }
+
+    /* Define the style for the genre boxes */
+.genre-box {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style the genre titles */
+.genre-title {
+  font-size: 24px;
+  margin-top: 0;
+  color: #333;
+}
+
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Pro:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header-title">Genres of music</h1>
+  </header>
+
+  <div class="container">
+    <div class="genre-container">
+      <div class="user-message" id="userMessageContainer"></div>
+      <div class="genre-content">
+        <p>Music, the universal language of human expression, has the extraordinary ability to transcend cultural boundaries, evoke emotions, and shape identities. Throughout history, various genres of music have emerged, each with its unique characteristics, origins, and influences. These genres not only serve as a testament to the dynamic nature of human creativity but also provide a window into the social, cultural, and emotional landscapes of their time.</p>     
+
+        <!-- Classical Music -->
+        <div class="genre-box">
+          <h2 class="genre-title">Classical Music</h2>
+          <p>Classical music, often regarded as the pinnacle of Western musical tradition, has its roots dating back to the medieval and Renaissance periods. It is characterized by its formal structure, intricate compositions, and emphasis on harmony and melody. Composers like Ludwig van Beethoven, Wolfgang Amadeus Mozart, and Johann Sebastian Bach have left an indelible mark on this genre. Classical music has evolved over the centuries, giving rise to various forms such as symphonies, concertos, and operas. Its enduring appeal lies in its ability to convey complex emotions and narratives through instrumental and vocal compositions.</p>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1DfGPEHxTYeaJpiNA4xUb5?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+  
+        <!-- Jazz -->
+        <div class="genre-box">
+          <h2 class="genre-title">Jazz</h2>
+          <p>Originating in the African American communities of New Orleans in the late 19th century, jazz is a genre known for its improvisational nature and rhythmic complexity. Jazz has been a vehicle for individual expression and innovation, with legendary figures like Louis Armstrong, Duke Ellington, and Miles Davis pushing its boundaries. It encompasses diverse styles, including swing, bebop, and fusion, making it a dynamic genre that reflects the cultural and social changes of the 20th century. Jazz's role in promoting racial integration and serving as a platform for artistic experimentation has been instrumental in shaping the American musical landscape.</p>        
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5b7OgznPJJr1vHNYGyvxau?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+  
+        <!-- Rock and Roll -->
+        <div class="genre-box">
+          <h2 class="genre-title">Rock and Roll</h2>
+          <p>Rock and roll burst onto the scene in the 1950s, and its energetic, rebellious spirit quickly captured the hearts and minds of the youth. With its roots in rhythm and blues, rock and roll was championed by artists like Elvis Presley, Chuck Berry, and Little Richard. It features prominent electric guitar riffs, driving rhythms, and lyrics that often explore themes of teenage rebellion, love, and self-identity. Over time, rock music diversified into various subgenres such as punk, metal, and alternative, each with its distinct sound and subculture. Rock and roll has not only been a soundtrack to generations but has also played a significant role in shaping youth culture and challenging societal norms.</p>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3z8h0TU7ReDPLIbEnYhWZb?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+  
+        <!-- Hip-Hop -->
+        <div class="genre-box">
+          <h2 class="genre-title">Hip-Hop</h2>
+          <p>Hip-Hop: Born in the South Bronx of New York City during the 1970s, hip-hop emerged as a cultural movement encompassing not only music but also dance, art, and fashion. Hip-hop music is characterized by its rhythmic vocal delivery, often featuring rapid rhymes and wordplay, accompanied by beats generated from turntables and drum machines. Artists like Grandmaster Flash, Run-D.M.C., and Tupac Shakur have been influential figures in the genre. Hip-hop has been a powerful vehicle for self-expression and social commentary, addressing issues like racial inequality, poverty, and urban life. It has also transcended its American origins to become a global phenomenon.</p>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7MJQ9Nfxzh8LPZ9e9u68Fq?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+  
+        <!-- Electronic Dance Music (EDM) -->
+        <div class="genre-box">
+          <h2 class="genre-title">Electronic Dance Music (EDM)</h2>
+          <p>The rise of electronic dance music (EDM) in the late 20th century marked a new era of music production and consumption. EDM relies heavily on electronic instruments and synthesizers to create repetitive, danceable beats. It encompasses various subgenres, including techno, house, trance, and dubstep. Iconic DJs like Daft Punk, Calvin Harris, and David Guetta have achieved worldwide fame in this genre. EDM is not only a genre but a cultural phenomenon, with massive music festivals like Tomorrowland and Ultra Music Festival drawing tens of thousands of fans from around the world. Its influence extends beyond music, shaping contemporary pop culture, fashion, and nightlife.</p>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6GyFP1nfCDB8lbD2bG0Hq9?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+  
+        <!-- R&B (Rhythm and Blues) -->
+        <div class="genre-box">
+          <h2 class="genre-title">R&B (Rhythm and Blues)</h2>
+          <p>R&B, a genre rooted in African American musical traditions, emerged in the 1940s and 1950s. It is characterized by its soulful vocals, emotive lyrics, and often incorporates elements of jazz and gospel music. Legendary R&B artists like Aretha Franklin, Ray Charles, and Marvin Gaye have left a lasting impact on the genre. R&B explores themes of love, relationships, and personal experiences, making it a genre that resonates deeply with its listeners.</p>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3U4isOIWM3VvDubwSI3y7a?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+  
+        <!-- Heavy Metal -->
+        <div class="genre-box">
+          <h2 class="genre-title">Heavy Metal</h2>
+          <p>Heavy metal, known for its aggressive guitar riffs, powerful vocals, and energetic performances, originated in the late 1960s and early 1970s. Bands like Black Sabbath, Led Zeppelin, and Metallica are pioneers of this genre. Heavy metal has many subgenres, including thrash metal, power metal, and death metal, each with its distinct characteristics. It often explores dark themes, such as rebellion, fantasy, and social issues, providing an outlet for catharsis and self-expression for its dedicated fanbase.</p>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2DlHlPMa4M17kufBvI2lEN?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+  
+        <!-- K-pop (Korean Pop) -->
+        <div class="genre-box">
+          <h2 class="genre-title">K-pop (Korean Pop)</h2>
+          <p>K-pop, short for Korean pop music, has taken the global music scene by storm in recent years. Emerging from South Korea, K-pop is characterized by its catchy melodies, impressive choreography, and visually stunning music videos. Popular K-pop groups like BTS, BLACKPINK, and EXO have gained international fame. K-pop transcends language barriers and is known for its vibrant fandom culture. It often incorporates a fusion of various genres, including pop, hip-hop, R&B, and electronic music, making it a genre that constantly evolves and surprises.</p>    
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6m1TWFMeon7ai9XLOzdbiR?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+  
+        <!-- Latin Music -->
+        <div class="genre-box">
+          <h2 class="genre-title">Latin Music</h2>
+          <p>Latin music is a diverse genre encompassing a wide range of styles, including salsa, reggaeton, bachata, and mariachi. Originating in Latin American countries, it is known for its passionate rhythms and colorful instrumentation. Artists like Selena, Juan Gabriel, and Daddy Yankee have made significant contributions to Latin music's global appeal. Latin music often celebrates themes of love, dance, and cultural pride, and its influence can be heard in many other music genres worldwide.</p>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6habFhsOp2NvshLv26DqMb?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+  
+        <!-- Punk Rock -->
+        <div class="genre-box">
+          <h2 class="genre-title">Punk Rock</h2>
+          <p>Punk rock emerged in the 1970s as a raw, rebellious response to the perceived excesses of mainstream rock music. Punk is characterized by its short, fast songs, simple three-chord structures, and lyrics often addressing themes of anti-establishment, social issues, and individuality. Bands like The Ramones, The Sex Pistols, and The Clash are iconic figures in punk rock. Punk culture extends beyond music, encompassing fashion, art, and a DIY (do-it-yourself) ethos.</p>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4KcH1ZRV2W1q7Flq0QqC76?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+  
+        <!-- Pop -->
+        <div class="genre-box">
+          <h2 class="genre-title">Pop</h2>
+          <p>Pop music, short for "popular music," is a genre that appeals to a broad audience. It is characterized by its catchy melodies, accessible lyrics, and often features electronic elements. Pop icons like Michael Jackson, Madonna, and Beyoncé have shaped the genre's evolution over the decades. Pop music often explores themes of love, relationships, and personal experiences, making it relatable to a wide range of listeners. It is known for its ability to reflect and influence popular culture.</p>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7qiZfU4dY1lWllzX7mPBI3?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+ 
+  <script>
+let audio = new Audio();
+let isPlaying = false;
+let playButton = document.getElementById('playButton');
+let playIcon = document.querySelector('.play-icon');
+let pauseIcon = document.querySelector('.pause-icon');
+let progressBar = document.querySelector('.progress-bar');
+let progressBarContainer = document.querySelector('.progress-bar-container');
+let timeElapsed = document.querySelector('.time-elapsed');
+
+function togglePlay() {
+  if (isPlaying) {
+    audio.pause();
+    playIcon.style.display = 'block';
+    pauseIcon.style.display = 'none';
+  } else {
+    audio.play();
+    playIcon.style.display = 'none';
+    pauseIcon.style.display = 'block';
+  }
+  isPlaying = !isPlaying;
+}
+
+function updateProgressBar() {
+  const { currentTime, duration } = audio;
+  const progressPercent = (currentTime / duration) * 100;
+  progressBar.style.width = `${progressPercent}%`;
+
+  // Update the time elapsed
+  const elapsedTime = formatTime(currentTime);
+  timeElapsed.textContent = elapsedTime;
+}
+
+function setProgressBar(e) {
+  const width = progressBarContainer.clientWidth;
+  const clickX = e.offsetX;
+  const duration = audio.duration;
+  audio.currentTime = (clickX / width) * duration;
+}
+
+function formatTime(time) {
+  const minutes = Math.floor(time / 60);
+  let seconds = Math.floor(time % 60);
+  seconds = seconds < 10 ? `0${seconds}` : seconds;
+  return `${minutes}:${seconds}`;
+}
+
+audio.addEventListener('timeupdate', updateProgressBar);
+</script>
+</body>
+
+</html>

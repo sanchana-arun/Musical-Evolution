@@ -1,0 +1,119 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #4d3d33; /* Dark brown text color */
+  margin: 0;
+  padding: 0;
+  background-color: #f0e6d2; /* Light beige background */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff5e1; /* Creamy beige container background */
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 35px;
+}
+
+/* Header Styles */
+header {
+  background-color: #b99b7f; /* Brownish-beige header background */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 20px;
+  text-align: center;
+  border: 15px solid #a0876e; /* Darker brownish-beige border */
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom right, #b99b7f, #a58c6a);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Update the header text color */
+h1 {
+  color: #fff; /* White header text */
+  font-size: 36px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 1px rgba(91, 35, 124, 0.8);
+  text-transform: uppercase;
+}
+
+/* ... (other styles remain the same) ... */
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  margin-top: 50px;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50px;
+  height: 100%;
+  border-left: 2px solid #8c705e; /* Brownish border */
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(30px); /* Initially moved down */
+  transition: opacity 0.6s ease, transform 0.6s ease; /* Add transition */
+  background-color: #fff; /* White background for each timeline box */
+  border-radius: 8px; /* Rounded corners for timeline boxes */
+  padding: 20px; /* Add padding to the timeline boxes */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for each timeline box */
+}
+
+.timeline-item.show {
+  opacity: 1; /* Shown on scroll */
+  transform: translateY(0); /* Moved up on scroll */
+}
+
+.timeline-content h2 {
+  color: #b99b7f; /* Brownish header text color */
+  font-size: 24px;
+}
+
+.timeline-content p {
+  margin-bottom: 10px;
+}
+
+.timeline-content img {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.image-container {
+  display: flex;
+}
+
+.image-container img:first-child {
+  height: 200px;
+  object-fit: cover;
+  width: auto;
+  margin-right: 10px;
+}
+
+.image-container img:last-child {
+  height: 200px;
+  object-fit: cover;
+  width: auto;
+  margin-left: 10px;
+}
+
+/* Simplify repeating styles for image containers */
+.timeline-item:nth-child(n+5) .image-container img {
+  height: 200px;
+  object-fit: cover;
+  width: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}

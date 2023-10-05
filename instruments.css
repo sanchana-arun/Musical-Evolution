@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #4d3d33;
+    margin: 0;
+    padding: 0;
+    background-color: #f0e6d2;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff5e1;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 35px;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #b99b7f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    text-align: center;
+    border: 15px solid #a0876e;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom right, #b99b7f, #a58c6a);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 36px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 1px rgba(91, 35, 124, 0.8);
+    text-transform: uppercase;
+  }
+
+  /* Instrument Styles */
+  .instrument-item {
+    position: relative;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .instrument-item .line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px; /* Adjust the width of the line as needed */
+    height: 100%;
+    background-color: #8c705e; /* Adjust the line color as needed */
+  }
+
+  .instrument-item.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .instrument-item h2 {
+    color: #b99b7f;
+    font-size: 24px;
+  }
+
+  .instrument-item p {
+    margin-bottom: 10px;
+  }
+
+  .instrument-item img {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+
+  .instrument-content h2 {
+    color: #b99b7f; /* Brownish header text color */
+    font-size: 24px;
+  }
+  
+  .instrument-content p {
+    margin-bottom: 10px;
+  }
+  
+  .instrument-content img {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+  
+  .image-container {
+    display: flex;
+  }
+
+  .image-container img:first-child {
+    height: 200px;
+    object-fit: cover;
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .image-container img:last-child {
+    height: 200px;
+    object-fit: cover;
+    width: auto;
+    margin-left: 10px;
+  }
+  
+  /* Simplify repeating styles for image containers */
+  .instrument-item:nth-child(n+5) .image-container img {
+    height: 200px;
+    object-fit: cover;
+    width: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  

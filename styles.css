@@ -1,0 +1,111 @@
+/* Global Styles */
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('background-image.jpeg'); /* Path to your background image */
+  background-size: cover; /* Make sure the image covers the entire background */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed; /* Fix the background image in place */
+  color: #6d574f; /* Brownish text color */
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: #f4ede3; /* Light beige container background */
+  border-radius: 20px; /* Add rounded corners */
+}
+
+/* Header Styles */
+header {
+  background-color: #b99b7f; /* Brownish-beige header background */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 20px;
+  text-align: center;
+  border: 15px solid #a0876e; /* Darker brownish-beige border */
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom right, #b99b7f, #a58c6a);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Update the header text color */
+h1 {
+  color: #fff;
+  font-size: 36px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 1px rgba(91, 35, 124, 0.8);
+  text-transform: uppercase;
+}
+
+/* Update the heart icon color */
+.heart-icon {
+  display: none; /* Hide the heart icon */
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #e1cdba; /* Light beige section background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Update the section heading color */
+section h2 {
+  color: #86561e; /* Purple heading color */
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Homepage Styles */
+#homepage {
+  text-align: center;
+  background-color: #d6c3ad; /* Medium beige homepage background */
+  margin-top: 35px;
+}
+
+/* Update button colors */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #b5947d; /* Brown button background */
+  color: #fff; /* White button text color */
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 0 10px; /* Add margin between buttons horizontally */
+  margin-bottom: 10px; /* Add margin below buttons to create a row */
+}
+
+.button:hover {
+  background-color: #a98267; /* Darker brown button background on hover */
+}
+
+/* Update the music icon size and alignment */
+.music-icon {
+  width: 40px; /* Adjust the icon size */
+  float: left;
+  margin-right: 10px;
+}
+
+/* CSS for Music Images Container */
+.music-images-container {
+  display: flex; /* Use flexbox to align images in a row */
+  justify-content: center; /* Center align images horizontally */
+  align-items: center; /* Center align images vertically */
+}
+
+.music-image {
+  width: 150px; /* Set the width of each image */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 10px; /* Add margin between images */
+}
